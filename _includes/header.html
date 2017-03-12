@@ -1,0 +1,22 @@
+<header id="site-header">
+
+  <!-- Site Hero -->
+  <div id="site-logo">DN</div>
+  <div id="site-title">Duff Neubauer</div>
+  <div id="site-tagline">Ramblings of a Software Developer</div>
+
+  <!-- Site Navigation -->
+  <nav id="site-nav">
+    <ul>
+      {% assign nav-pages = site.html_pages | sort: "nav-order" %}
+      {% for p in nav-pages %}
+      <li>
+        <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+          {{ p.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+</header>

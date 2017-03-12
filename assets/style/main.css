@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto 0 auto;
+  /*background-color: red;*/
+  max-width: 960px;
+  padding: 0 20px 0 20px;
+}
+
+/* header.html */
+
+#site-header {
+  margin-top: 60px;
+  /*background-color: gray;*/
+}
+
+  #site-logo {
+    color: #B2D1D7;
+    font-size: 130px;
+    font-family: "AvenirNext-Heavy";
+    letter-spacing: 4.84px;
+    line-height: 115px;
+    text-align: center;
+  }
+
+  #site-title {
+    color: #333333;
+    font-family: "AvenirNext-Medium";
+    font-size: 24px;
+    letter-spacing: 0.59px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #site-tagline {
+    font-family: "AvenirNext-Italic";
+    font-size: 20px;
+    color: #777777;
+    letter-spacing: 0.49px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+  }
+
+  #site-nav {
+    border-top: 1px #D8D8D8 solid;
+    border-bottom: 1px #D8D8D8 solid;
+    margin: 30px 0 30px 0;
+    padding: 15px 0 15px 0;
+  }
+
+    #site-nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+      #site-nav ul li {
+        display: inline;
+        margin: 0 10px 0 10px;
+      }
+
+        #site-nav ul li a,
+        #site-nav ul li a:visited {
+          text-decoration: none;
+          font-family: "AvenirNext-Regular";
+          font-size: 16px;
+          color: #777777;
+          letter-spacing: 0.39px;
+          text-transform: uppercase;
+        }
+
+        #site-nav ul li a.active,
+        #site-nav ul li a:hover {
+          font-family: "AvenirNext-DemiBold";
+          font-size: 16px;
+          color: #333333;
+          letter-spacing: 0.39px;
+        }
