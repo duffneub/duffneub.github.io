@@ -3,11 +3,25 @@
   padding: 0;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container {
   margin: 0 auto 0 auto;
   /*background-color: red;*/
   max-width: 960px;
   padding: 0 20px 0 20px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* header.html */
@@ -78,3 +92,88 @@
           color: #333333;
           letter-spacing: 0.39px;
         }
+
+/* project.html */
+
+section.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  figure.project {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    overflow: hidden;
+    margin: 40px -10px 40px -10px;
+    position: relative;
+  }
+
+  figure.project:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+    figure.project > * {
+      width: 50%;
+      margin: 0 10px 0 10px;
+    }
+
+    .project-image-frame {
+      text-align: center;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .project-image.iOS {
+      width: 60%;
+      margin-top: 20%;
+    }
+
+    .project-image.Web {
+      width: 80%;
+      margin-top: 18%;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 15px;
+    }
+
+      .project-title {
+        font-family: "AvenirNext-Bold";
+        font-size: 24px;
+        color: #333333;
+        letter-spacing: 0.59px;
+      }
+
+      .project-date {
+        font-family: "AvenirNext-Medium";
+        font-size: 16px;
+        font-weight: 500;
+        color: #777777;
+        letter-spacing: 0.39px;
+      }
+
+    .project-description {
+      font-family: "AvenirNext-Regular";
+      font-size: 16px;
+      color: #444444;
+      letter-spacing: 0.59px;
+      line-height: 30px;
+    }
+
+    .project-footer {
+      position: absolute;
+      bottom: 0;
+    }
+
+      .project-footer p {
+        font-family: "AvenirNext-Regular";
+        font-size: 16px;
+        color: #777777;
+        letter-spacing: 0.59px;
+        line-height: 30px;
+      }

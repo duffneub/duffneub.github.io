@@ -1,0 +1,32 @@
+[
+  {
+    "brand-color": "#1F6C99",
+    "platform": "iOS",
+    "image-src": "assets/image/iSleepLate.png",
+    "product-url": "https://github.com/duffneubauer/iSleepLate",
+    "title": "iSleepLate",
+    "release-date": "Spring 2015",
+    "description": "An alarm clock iOS application that adjusts wake-up time according projected traffic conditions. iSleepLate was developed during a course at UT Austin which paired two Computer Science students with two Journalism students. Although not currently available, we were able to release the app into Apple's App Store within one semester.",
+    "tools": ["Objective-C", "Sketch"]
+  },
+  {
+    "brand-color": "#677e81",
+    "platform": "Web",
+    "image-src": "assets/image/VeganAthlete.png",
+    "product-url": "https://github.com/duffneubauer/vegan-athlete",
+    "title": "Vegan Athlete",
+    "release-date": "Spring 2015",
+    "description": "Vegan Athlete is a research project, in the form of a website, that is meant to answer one question -- are vegan athletes at a disadvantage to carnivorous ones because of their diet. This was created during a Rhetoric of Food course at UT Austin.",
+    "tools": ["HTML", "CSS", "Jekyll"]
+  },
+  {
+    "brand-color": "#3FC380",
+    "platform": "iOS",
+    "image-src": "assets/image/MintCondition.png",
+    "product-url": "https://github.com/duffneubauer/HealthApp",
+    "title": "MintCondition",
+    "release-date": "Summer 2014",
+    "description": "MintCondition is an iOS application that aims to simplify a healthy lifestyle by tracking portions of food groups in preference to caloric intake. This app was designed and developed in my spare time while attending UT Austin. MintCondition was previously available in Apple's App Store, but is no longer for sale.",
+    "tools": ["Objective-C", "Sketch"]
+  }
+]

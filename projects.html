@@ -4,3 +4,8 @@ title: "Projects"
 nav-order: 3
 permalink: "projects"
 ---
+<section class="projects">
+  {% for p in site.data.projects %}
+    {% include project.html project=p %}
+  {% endfor %}
+</section>
