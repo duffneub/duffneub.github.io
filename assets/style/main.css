@@ -122,10 +122,6 @@ section.projects {
     position: relative;
   }
 
-  figure.project:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
     figure.project > * {
       width: 50%;
       margin: 0 10px 0 10px;
