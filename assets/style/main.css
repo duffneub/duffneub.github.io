@@ -6,7 +6,6 @@
 a,
 a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 a:hover {
@@ -19,6 +18,14 @@ p {
   color: #444444;
   letter-spacing: 0.59px;
   line-height: 30px;
+}
+
+p a {
+  color: #8CBBC4;
+}
+
+h1 a {
+  color: inherit;
 }
 
 .container {
@@ -185,3 +192,28 @@ section.projects {
         letter-spacing: 0.59px;
         line-height: 30px;
       }
+
+/* index.html */
+
+#About {
+  background-image: url("/assets/image/headshot.png");
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: -50px 50px;
+}
+
+  #About .next-to-head {
+    margin-left: 425px;
+  }
+
+  #About .next-to-shoulder {
+    margin-left: 580px;
+  }
+
+  #About img {
+    margin-top: 50px;
+  }
+
+  #About p {
+    margin-top: 20px;
+  }
