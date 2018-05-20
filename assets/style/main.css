@@ -199,10 +199,11 @@ section.projects {
   background-image: url("/assets/image/headshot.png");
   background-repeat: no-repeat;
   background-position: -50px 50px;
+  background-size: 49%;
 }
 
   #About .next-to-head {
-    margin-left: 425px;
+    margin-left: 45%;
   }
 
   #About .next-to-shoulder {
