@@ -1,0 +1,28 @@
+#post h1 {
+  font-family: "AvenirNext-Bold";
+  font-size: 24px;
+  color: #333333;
+  letter-spacing: 0.59px;
+}
+
+#post h3 {
+  font-family: "AvenirNext-Medium";
+  font-size: 22px;
+  color: #333333;
+  letter-spacing: 0.59px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#post time {
+  font-family: "AvenirNext-Medium";
+  font-size: 14px;
+  color: #777777;
+  letter-spacing: 0.39px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#post p, #post .highlighter-rouge {
+  margin-bottom: 20px;
+}

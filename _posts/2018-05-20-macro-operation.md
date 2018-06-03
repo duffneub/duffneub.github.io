@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "The MacroOperation: How to Chain Operations"
 date: 2018-05-20 14:27:00 -0700
 categories: swift
@@ -15,12 +15,12 @@ Operation dependencies are perfect when you simply need to schedule one operatio
 
 In some cases, the input and output of an operation are known at instantiation. If we are chaining a `DownloadFile` operation to an `OpenFile` operation, you can create the destination of the downloaded file first and then inject the location in the constructors for `DownloadFile` and `OpenFile`.
 
-{% highlight swift %}
+```swift
 let downloadSrc = ...
 let downloadDst = ...
 let downloadOp = DownloadOperation(src: downloadSrc, dst: downloadDst)
 let openOp = OpenOperation(src: downloadDst)
-{% endhighlight %}
+```
 
 However, what if the output of an operation is not known at compile time? Consider again our use case for uploading a photo to a server. Since the location of the photo is not known at compile time, we are forced to instantiate the operations without specifying all operation dependencies. In other words, `ChoosePhoto's` output and `UploadPhoto's` input are both `nil` at compile time.
 
@@ -34,7 +34,6 @@ choosePhoto.completionBlock = {
 
   let uploadPhoto = UploadPhotoOp(location: choosePhoto.location)
   queue.add(uploadPhoto)
-
 }
 
 queue.add(choosePhoto)
