@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "The `MacroOperation`: How to pass data between sequential `Operations`"
+title: "The MacroOperation: How to Chain Operations"
 date: 2018-05-20 14:27:00 -0700
 categories: swift
 ---

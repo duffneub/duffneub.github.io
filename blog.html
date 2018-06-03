@@ -4,4 +4,24 @@ title: "Blog"
 nav-order: 2
 permalink: "blog"
 ---
-<p id="coming-soon">Coming Soon.</p>
+<!-- <p id="coming-soon">Coming Soon.</p> -->
+
+<div id="blog">
+
+  {% for post in site.posts %}
+
+    <article class="post">
+
+      <h1>{{ post.title }}</h1>
+      <time datetime={{ post.date | date_to_xmlschema }}>{{ post.date | date: "%B %-d, %Y" }}</time>
+      {{ post.excerpt }}
+
+      <div class="button">
+        <a href={{ post.url }}>Continue</a>
+      </div>
+
+    </article>
+
+  {% endfor %}
+
+</div>
