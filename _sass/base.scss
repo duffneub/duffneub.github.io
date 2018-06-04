@@ -17,6 +17,10 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 p a {
   color: #8CBBC4;
 }
@@ -195,28 +199,3 @@ section.projects {
         letter-spacing: 0.59px;
         line-height: 30px;
       }
-
-/* index.html */
-
-#About {
-  background-image: url("/assets/image/headshot.png");
-  background-repeat: no-repeat;
-  background-position: -50px 50px;
-  background-size: 49%;
-}
-
-  #About .next-to-head {
-    margin-left: 45%;
-  }
-
-  #About .next-to-shoulder {
-    margin-left: 580px;
-  }
-
-  #About img {
-    margin-top: 50px;
-  }
-
-  #About p {
-    margin-top: 20px;
-  }
