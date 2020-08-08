@@ -11,7 +11,7 @@
   <meta name="description" content="Duff Neubauer">
   <!-- <meta name="author" content="SitePoint"> -->
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
@@ -35,44 +35,26 @@
 
   <section class="resume">
     <h2>About Me</h2>
-    <p>I began teaching myself how to code in high school with the help from a few online videos. I formally studied Computer Science at the University of Texas at Austin 🤘, where I designed, developed, and deployed 4 fully-fledged iOS applications to the App Store. I've spent the majority of my carear as a Software Engineer at Apple, managing components in AppKit -- Apple's UI framework for macOS -- and triaging compatibility issues with 3rd party software.</p>
+    <p>{{ site.data.about_me }}</p>
 
     <h2>Experience</h2>
     <ol>
-      <li>
-        <h3>2018 - 2020</h3>
-        <ul>
-          <li class="job-title">AppKit Engineer</li>
-          <li class="company"> Apple</li>
-        </ul>
-      </li>
-      <li>
-        <h3>2015 - 2018</h3>
-        <ul>
-          <li class="job-title">Binary Compatibility Engineer</li>
-          <li class="company"> Apple</li>
-        </ul>
-      </li>
-      <li>
-        <h3>2012 - 2015</h3>
-        <ul>
-          <li class="job-title">BS in Computer Science</li>
-          <li class="company">The University of Texas at Austin</li>
-        </ul>
-      </li>
+      {% for item in site.data.experience %}
+        <li>
+          <h3>{{ item.years }}</h3>
+          <ul>
+            <li class="title">{{ item.title }}</li>
+            <li class="place">{{ item.place }}}</li>
+          </ul>
+        </li>
+      {% endfor %}
     </ol>
 
     <h2>Highlights</h2>
     <ol>
-      <li>
-        Designed & developed a native macOS Swift application used by multiple organizations to streamline the testing and investigation of 3rd-party issues on macOS
-      </li>
-      <li>
-        Coordinated with Human Interface, Accessibility, and other teams at Apple to ship a new AppKit control in preparation for new hardware
-      </li>
-      <li>
-        Presented features for SwiftUI and macOS Catalyst to Craig Federighi, the Senior Vice President of Software at Apple
-      </li>
+      {% for item in site.data.highlights %}
+        <li>{{ item }}</li>
+      {% endfor %}
     </ol>
   </section>
 
