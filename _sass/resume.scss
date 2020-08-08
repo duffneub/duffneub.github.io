@@ -1,0 +1,59 @@
+section.resume {
+  background-color: #F9F9F9;
+
+  section {
+    padding: 20px 0;
+  }
+
+  h2 {
+    text-transform: lowercase;
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  h2::after {
+    content: "."
+  }
+
+  ol, ul {
+    padding: 0;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+
+    p {
+      font-weight: bolder;
+      line-height: 30px;
+    }
+  }
+
+  ol > li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+
+    h3 {
+      display: inline;
+      margin-top: 0;
+      font-weight: lighter;
+      color: #9B9B9B;
+    }
+
+    .title {
+      font-weight: bolder;
+    }
+
+    .place {
+      font-size: 14px;
+    }
+  }
+
+  .experience-container {
+    .title {
+      font-weight: bolder;
+    }
+  }
+}
