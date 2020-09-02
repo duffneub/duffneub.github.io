@@ -1,22 +1,9 @@
-<header id="site-header">
-
-  <!-- Site Hero -->
-  <div id="site-logo">DN</div>
-  <div id="site-title">Duff Neubauer</div>
-  <div id="site-tagline">macOS Engineer | Swift Developer | Below Average Surfer</div>
-
-  <!-- Site Navigation -->
-  <nav id="site-nav">
-    <ul>
-      {% assign nav-pages = site.html_pages | sort: "nav-order" %}
-      {% for p in nav-pages %}
-      <li>
-        <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-          {{ p.title }}
-        </a>
-      </li>
-      {% endfor %}
+<header class="site-header">
+  <div class="logo"><b>duff</b>neubauer</div>
+  <nav>
+    <ul class="main-menu">
+      <li class="menu-item">About</li>
+      <li class="menu-item">Contact</li>
     </ul>
   </nav>
-
 </header>
