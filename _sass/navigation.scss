@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  .main-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+
+    .menu-item {
+      margin: 0 1rem;
+      text-transform: lowercase;
+    }
+  }
+}

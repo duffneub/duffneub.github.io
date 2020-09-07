@@ -1,12 +1,6 @@
-<header class="site-header">
-  {% include logo.html %}
-  <nav>
-    <ul class="main-menu">
-      {% for item in site.data.navigation %}
-        <li class="menu-item">
-          <a href="{{ item.link }}">{{ item.name }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</header>
+<div class="hero-background-container">
+  <div class="container">
+    {% include navigation.html %}
+    {% include hero.html %}
+  </div>
+</div>
