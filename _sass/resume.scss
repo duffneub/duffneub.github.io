@@ -19,15 +19,19 @@ section.resume {
     padding: 0;
   }
 
+  ol > li {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 30px;
+    margin: 0;
+  }
+
   .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-
-    p {
-      font-weight: bolder;
-      line-height: 30px;
-    }
   }
 
   ol > li {
@@ -52,6 +56,10 @@ section.resume {
   }
 
   .experience-container {
+    ul > li {
+      margin-bottom: 0.8rem;
+    }
+
     .title {
       font-weight: bolder;
     }
