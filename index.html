@@ -13,19 +13,23 @@
 
   <link rel="stylesheet" type="text/css" href="/assets/style/styles.css">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d9fd879a74.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+  <div class="hero-background-container">
+    <div class="container">
+      {% include header.html %}
+      {% include hero.html %}
+    </div>
+  </div>
 
-  {% include header.html %}
-
-  <section class="hero">
-    <h1>Building the UI between you and your customer</h1>
-    <p>My name is Duff Neubauer. I'm a software engineer specializing in iOS, macOS, and other Apple platforms.</p>
-    <a href="#" class="button">Learn More</a>
-  </section>
-
-  <section class="resume">
+  <section class="resume" id="resume">
     <div class="container">
 
       <section class="about-container">

@@ -1,0 +1,4 @@
+- name: About
+  link: "#resume"
+- name: Contact
+  link: mailto:d.neubauer@me.com

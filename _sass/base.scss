@@ -1,9 +1,11 @@
 * {
   font-size: 16px;
+  font-family: 'Nunito', sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,12 +18,22 @@ ol, ul {
 }
 
 section {
-  padding: 60px 0;
+  padding: 4rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.hero-background-container {
+  background: linear-gradient(to right, #FFFFFF 50%, #F2F3F5 50%);
+  // padding-bottom: 0rem;
 }
 
 // * {

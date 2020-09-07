@@ -2,8 +2,11 @@
   <div class="logo"><b>duff</b>neubauer</div>
   <nav>
     <ul class="main-menu">
-      <li class="menu-item">About</li>
-      <li class="menu-item">Contact</li>
+      {% for item in site.data.navigation %}
+        <li class="menu-item">
+          <a href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </header>
