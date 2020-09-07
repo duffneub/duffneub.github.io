@@ -1,0 +1,32 @@
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #335878;
+
+  padding: 4rem;
+  text-align: center;
+
+  .logo, .logo * {
+    color: white;
+  }
+
+  .social-media-links {
+    margin: 2rem 0;
+    
+    a {
+      text-decoration: none;
+
+      i {
+        margin: 0 0.5rem;
+        color: #CCCCCC;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .copyright {
+    color: #CCCCCC;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+}

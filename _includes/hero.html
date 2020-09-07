@@ -1,0 +1,16 @@
+<section class="hero">
+  <h1>Building the UI between you and your customer</h1>
+
+  <div class="blurb">
+    <p>My name is Duff Neubauer. I'm a software engineer specializing in iOS, macOS, and other Apple platforms.</p>
+    <a href="#resume" class="button">Learn More <i class="fas fa-long-arrow-alt-down"></i></a>
+  </div>
+
+  <div class="social-media-links">
+    {% for item in site.data.social-media %}
+      <a href="{{ item.link }}">
+        <i class="{{ item.icon }}"></i>
+      </a>
+    {% endfor %}
+  </div>
+</section>

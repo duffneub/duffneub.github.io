@@ -1,0 +1,84 @@
+.hero-image-container {
+  background-color: red;
+  z-index: -1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 7;
+  grid-column-end: 13;
+}
+
+section.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  background-image: url(/assets/image/peace_up.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: right bottom;
+
+  padding: 4rem 0 2rem 0;
+
+  h1 {
+    grid-row-start: 1;
+
+    grid-column-start: 2;
+    grid-column-end: 9;
+
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-align: right;
+  }
+
+  .blurb {
+    grid-row-start: 2;
+
+    grid-column-start: 2;
+    grid-column-end: 7;
+
+    padding: 0 0.8rem;
+
+    p {
+      font-size: 1.4rem;
+      text-align: right;
+
+    }
+    .button {
+      float: right;
+      margin-top: 2rem;
+
+      background-color: #335878;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: lowercase;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+
+      i {
+        margin-left: .5rem;
+      }
+    }
+  }
+
+  .social-media-links {
+    margin-top: 7rem;
+
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+    a {
+      text-decoration: none;
+
+      i {
+        margin: 0 0.5rem;
+        color: #777777;
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,26 +1,23 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Duff Neubauer</title>
-    <link rel="stylesheet" type="text/css" href="/assets/style/styles.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61032869-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-      gtag('config', 'UA-61032869-1');
-    </script>
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.title }}">
 
-  </head>
-  <body>
-    <div class="container">
-      {% include header.html %}
-      <div id="{{ page.title }}">
-        {{ content }}
-      </div>
-    </div>
-  </body>
+  <link rel="stylesheet" type="text/css" href="/assets/style/styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d9fd879a74.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  {{ content }}
+</body>
 </html>

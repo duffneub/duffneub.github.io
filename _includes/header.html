@@ -1,22 +1,6 @@
-<header id="site-header">
-
-  <!-- Site Hero -->
-  <div id="site-logo">DN</div>
-  <div id="site-title">Duff Neubauer</div>
-  <div id="site-tagline">macOS Engineer | Swift Developer | Below Average Surfer</div>
-
-  <!-- Site Navigation -->
-  <nav id="site-nav">
-    <ul>
-      {% assign nav-pages = site.html_pages | sort: "nav-order" %}
-      {% for p in nav-pages %}
-      <li>
-        <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
-          {{ p.title }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </nav>
-
-</header>
+<div class="hero-background-container">
+  <div class="container">
+    {% include navigation.html %}
+    {% include hero.html %}
+  </div>
+</div>

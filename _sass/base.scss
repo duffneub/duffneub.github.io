@@ -1,201 +1,32 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "AvenirNext-Regular";
-  color: #444444;
-  letter-spacing: 0.59px;
-  line-height: 30px;
   font-size: 16px;
+  font-family: 'Nunito', sans-serif;
 }
 
-a,
-a:visited {
-  text-decoration: none;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-p a {
-  color: #8CBBC4;
-}
-
-h1 a {
-  color: inherit;
-}
-
-.container {
-  margin: 0 auto 0 auto;
-  /*background-color: red;*/
-  max-width: 960px;
-  padding: 0 20px 0 20px;
-}
-
-.bold {
-  font-weight: bold;
+body {
+  padding: 0;
+  margin: 0;
 }
 
 ol, ul {
-  list-style-position: inside;
-  margin-bottom: 20px;
+  list-style-type: none;
 }
 
-#coming-soon {
-  text-align: center;
+section {
+  padding: 4rem 0;
 }
 
-/* header.html */
-
-#site-header {
-  margin-top: 60px;
-  /*background-color: gray;*/
+a {
+  text-decoration: none;
+  color: black;
 }
 
-  #site-logo {
-    color: #B2D1D7;
-    font-size: 130px;
-    font-family: "AvenirNext-Heavy";
-    letter-spacing: 4.84px;
-    line-height: 115px;
-    text-align: center;
-  }
-
-  #site-title {
-    color: #333333;
-    font-family: "AvenirNext-Medium";
-    font-size: 24px;
-    letter-spacing: 0.59px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  #site-tagline {
-    font-family: "AvenirNext-Regular";
-    font-size: 16px;
-    color: #777777;
-    letter-spacing: 0.49px;
-    margin: 10px 0 10px 0;
-    text-align: center;
-  }
-
-  #site-nav {
-    border-top: 1px #D8D8D8 solid;
-    border-bottom: 1px #D8D8D8 solid;
-    margin: 30px 0 30px 0;
-    padding: 15px 0 15px 0;
-  }
-
-    #site-nav ul {
-      list-style: none;
-      text-align: center;
-      margin-bottom: 0;
-    }
-
-      #site-nav ul li {
-        display: inline;
-        margin: 0 10px 0 10px;
-      }
-
-        #site-nav ul li a,
-        #site-nav ul li a:visited {
-          text-decoration: none;
-          font-family: "AvenirNext-Regular";
-          font-size: 16px;
-          color: #777777;
-          letter-spacing: 0.39px;
-          text-transform: uppercase;
-        }
-
-        #site-nav ul li a.active,
-        #site-nav ul li a:hover {
-          font-family: "AvenirNext-DemiBold";
-          font-size: 16px;
-          color: #333333;
-          letter-spacing: 0.39px;
-        }
-
-/* project.html */
-
-section.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
-
-  figure.project {
-    display: flex;
-    flex-direction: row;
-    height: 350px;
-    overflow: hidden;
-    margin: 40px -10px 40px -10px;
-    position: relative;
-  }
-
-    figure.project > * {
-      width: 50%;
-      margin: 0 10px 0 10px;
-    }
-
-    .project-image-frame {
-      text-align: center;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-
-    .project-image.iOS {
-      width: 60%;
-      margin-top: 20%;
-    }
-
-    .project-image.Web {
-      width: 80%;
-      margin-top: 18%;
-    }
-
-    .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 15px;
-    }
-
-      .project-title {
-        font-family: "AvenirNext-Bold";
-        font-size: 24px;
-        color: #333333;
-        letter-spacing: 0.59px;
-      }
-
-      .project-date {
-        font-family: "AvenirNext-Medium";
-        font-size: 16px;
-        font-weight: 500;
-        color: #777777;
-        letter-spacing: 0.39px;
-      }
-
-    .project-description {
-      font-family: "AvenirNext-Regular";
-      font-size: 16px;
-      color: #444444;
-      letter-spacing: 0.59px;
-      line-height: 30px;
-    }
-
-    .project-footer {
-      position: absolute;
-      bottom: 0;
-    }
-
-      .project-footer p {
-        font-family: "AvenirNext-Regular";
-        font-size: 16px;
-        color: #777777;
-        letter-spacing: 0.59px;
-        line-height: 30px;
-      }
