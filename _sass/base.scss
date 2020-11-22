@@ -26,6 +26,25 @@ a {
   color: black;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #777;
+
+  a {
+      text-decoration: underline;
+      color: inherit;
+  }
+}
+
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
