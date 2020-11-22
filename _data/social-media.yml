@@ -2,8 +2,8 @@
   icon: fab fa-linkedin-in
 - link: https://github.com/duffneub
   icon: fab fa-github
-- link: https://www.twitch.tv/duffneub
-  icon: fab fa-twitch
+# - link: https://www.twitch.tv/duffneub
+#   icon: fab fa-twitch
 - link: https://twitter.com/duffneub
   icon: fab fa-twitter
 # - link: mailto:d.neubauer@me.com
