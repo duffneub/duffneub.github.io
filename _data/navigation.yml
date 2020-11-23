@@ -1,4 +1,6 @@
 - name: About
-  link: "#resume"
+  link: "/#resume"
+- name: Blog
+  link: "/blog.html"
 - name: Contact
   link: mailto:d.neubauer@me.com

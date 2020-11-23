@@ -5,3 +5,11 @@
 .logo {
   font-weight: lighter;
 }
+
+// Screen width < 600px
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-bottom: 0.7rem;
+  }
+}

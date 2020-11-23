@@ -7,7 +7,7 @@ section.resume {
 
   h2 {
     text-transform: lowercase;
-    font-size: 24px;
+    font-size: 2.8rem;
     margin-top: 0;
   }
 
@@ -24,7 +24,7 @@ section.resume {
   }
 
   p {
-    line-height: 30px;
+    line-height: 3rem;
     margin: 0;
   }
 
@@ -37,7 +37,7 @@ section.resume {
   ol > li {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 14px;
+    font-size: 1.8rem;
 
     h3 {
       display: inline;
@@ -51,7 +51,7 @@ section.resume {
     }
 
     .place {
-      font-size: 14px;
+      font-size: 1.8rem;
     }
   }
 
@@ -62,6 +62,25 @@ section.resume {
 
     .title {
       font-weight: bolder;
+    }
+  }
+}
+
+// Screen width < 600px
+
+@media only screen and (max-width: 600px) {
+  section.resume {
+    .about-container {
+      display: inherit;
+    }
+
+    ol > li {
+      display: inherit;
+
+      h3 {
+        display: block;
+        margin-bottom: 1rem;
+      }
     }
   }
 }

@@ -27,6 +27,12 @@ section.hero {
     font-size: 4.5rem;
     font-weight: 900;
     text-align: right;
+    margin-bottom: 1rem;
+  }
+
+  .headshot {
+    display: none;
+    width: 100%;
   }
 
   .blurb {
@@ -38,7 +44,7 @@ section.hero {
     padding: 0 0.8rem;
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       text-align: right;
 
     }
@@ -79,6 +85,41 @@ section.hero {
         color: #777777;
         font-size: 2rem;
       }
+    }
+  }
+}
+
+// Screen width < 600px
+
+@media only screen and (max-width: 600px) {
+  section.hero {
+    display: inherit;
+    padding: 0;
+    background: none;
+
+    h1 {
+      margin: 1rem 0;
+      text-align: inherit;
+    }
+
+    .headshot {
+      display: inherit;
+    }
+
+    .blurb {
+      text-align: center;
+      p {
+        text-align: left;
+      }
+      .button {
+        float: inherit;
+        // margin: auto;
+        // display: inline-block;
+      }
+    }
+
+    .social-media-links {
+      margin-bottom: 2rem;
     }
   }
 }
