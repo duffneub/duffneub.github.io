@@ -26,3 +26,15 @@
 
     padding-bottom: 5rem;
 }
+
+// Screen width < 600px
+
+@media only screen and (max-width: 600px) {
+    .post {
+        header {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}

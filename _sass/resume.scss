@@ -65,3 +65,22 @@ section.resume {
     }
   }
 }
+
+// Screen width < 600px
+
+@media only screen and (max-width: 600px) {
+  section.resume {
+    .about-container {
+      display: inherit;
+    }
+
+    ol > li {
+      display: inherit;
+
+      h3 {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
