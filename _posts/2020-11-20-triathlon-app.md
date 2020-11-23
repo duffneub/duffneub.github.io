@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 <figure>
   <img src="https://source.unsplash.com/2JHprwaUC_w/1920x1111" alt="Apple Watch">
   <figcaption>
-    <span>Photo by <a href="https://unsplash.com/@shiwa_id?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shiwa ID</a> on <a href="https://unsplash.com/s/photos/apple-watch-series-5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    <span class="photo-credit">Photo by <a href="https://unsplash.com/@shiwa_id?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shiwa ID</a> on <a href="https://unsplash.com/s/photos/apple-watch-series-5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
   </figcaption>
 </figure>
 
