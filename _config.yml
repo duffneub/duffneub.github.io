@@ -1,2 +1,2 @@
-permalink: /blog/:year/:month/:day/:title
+permalink: pretty
 google_analytics: UA-61032869-1
