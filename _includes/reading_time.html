@@ -1,1 +1,3 @@
-{{ content | number_of_words | divided_by: 180 | ceil | append: ' minute read' }}
+{% if include.post %}
+{{ post.content | number_of_words | divided_by: 180 | ceil | append: ' minute read' }}
+{% endif %}

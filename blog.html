@@ -9,7 +9,7 @@ title: Blog
             <li class="post-preview">
                 <div class="metadata">
                     <p><i class="far fa-calendar-alt"></i>&nbsp;{{ post.date | date: "%b %d, %Y" }}</p>
-                    <p><i class="far fa-clock"></i>&nbsp;{% include reading_time.html content=post %}</p>
+                    <!-- <p><i class="far fa-clock"></i>&nbsp;{% include reading_time.html post=post.content %}</p>  -->
                 </div>
                 <div class="content">
                     <div class="title">
@@ -18,7 +18,7 @@ title: Blog
                     </div>
                     <div class="metadata-inline">
                         <p><i class="far fa-calendar-alt"></i>&nbsp;{{ post.date | date: "%b %d, %Y" }}</p>
-                        <p><i class="far fa-clock"></i>&nbsp;{% include reading_time.html content=post %}</p>
+                        <!-- <p><i class="far fa-clock"></i>&nbsp;{% include reading_time.html post=post.content %}</p> -->
                     </div>
                     {{ post.excerpt }}
                 </div>
