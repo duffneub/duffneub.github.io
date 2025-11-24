@@ -1,37 +1,88 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
+
 <BaseLayout pageTitle="about">
   	<section>
 		<h1>about.</h1>
 
-		<!-- <img src="/src/assets/duff.png" alt="Duff Neubauer" /> -->
-
-		<!-- <figure>
-			<div class="bg-box"></div>
-			<div class="image-container">
-				<div class="image-wrapper">
-					<img src="/images/duff.png" alt="Duff Neubauer" />
-					<div class="image-overlay"></div>
-				</div>
+		<figure>
+			<div class="headshot">
+				<img src="/src/assets/duff.png" alt="Duff Neubauer" />
 			</div>
-		</figure> -->
 
-		<p class="bio-text">
-			<strong class="bold">Duff Neubauer</strong> is an iOS engineer with 10+ years of experience building high-performance apps at Apple, Twitch, and Latch. He specializes in Swift, SwiftUI, and Bluetooth-connected experiences, with a focus on clean architecture, product polish, and speed.
-		</p>
-
-		<ul>
-			<li>
-				<a href="#" class="link-linkedin">LinkedIn</a>
-			</li>
-			<li>
-				<a href="#" class="link-github">GitHub</a>
-			</li>
-			<li>
-				<a href="#" class="link-resume">Resume</a>
-			</li>
-		</ul>
+			<figcaption>
+				<p>
+					<span>Duff Neubauer</span> is an iOS engineer with 10+ years of experience building high-performance apps at Apple, Twitch, and Latch. He specializes in Swift, SwiftUI, and Bluetooth-connected experiences, with a focus on clean architecture, product polish, and speed.
+				</p>
+				<ul>
+					<li>
+						<a href="mailto:d.neubauer@me.com" target="_blank">Email</a>
+					</li>
+					<li>
+						<a href="https://github.com/duffneub" target="_blank">GitHub</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/duffneubauer" target="_blank">LinkedIn</a>
+					</li>
+					<li>
+						<a href="/public/duff-neubauer-resume.pdf" target="_blank">Resume</a>
+					</li>
+				</ul>
+			</figcaption>
+		</figure>
 
 	</section>
 </BaseLayout>
+
+<style>
+	section {
+		align-items: center;
+		display: flex;
+		grid-column: 2 / span 10;
+		flex-direction: column;
+	}
+
+    h1 {
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 40px;
+	}
+
+	.headshot {
+		background-color: #F5F5F5;
+		border-radius: 16px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	img {
+		filter: grayscale();
+	}
+
+	figcaption {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	figcaption span {
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	li {
+		margin-right: 10px;
+	}
+
+	li:hover {
+		text-decoration: underline;
+	}
+</style>

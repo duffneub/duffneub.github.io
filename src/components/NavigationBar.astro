@@ -1,22 +1,30 @@
+---
+const pathname = Astro.url.pathname;
+---
+
 <a id="logo" href="/">monikr.</a>
 <nav>
-    <a href="/">projects</a>
-    <a href="/about">about</a>
+    <a href="/" class={pathname === "/" ? "active" : ""}>projects</a>
+    <a href="/about" class={pathname === "/about" ? "active" : ""}>about</a>
 </nav>
 
 <style>
     #logo {
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     nav a {
         font-size: 16px;
-        font-weight: normal;
+        font-weight: 300;
         margin-left: 10px;
     }
 
     nav a:hover {
+        text-decoration: underline;
+    }
+
+    nav a.active {
         text-decoration: underline;
     }
 </style>
