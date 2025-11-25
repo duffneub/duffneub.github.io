@@ -2,18 +2,44 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout pageTitle="Duff Neubauer">
+<BaseLayout pageTitle="About - Duff Neubauer">
   	<section>
-		<h1>projects.</h1>
-		<p>Coming soon.</p>
-	<section />
+		<h1>about.</h1>
+
+		<figure>
+			<div class="headshot">
+				<img src="/assets/duff-neubauer.png" alt="Duff Neubauer" />
+			</div>
+
+			<figcaption>
+				<p>
+					<span>Duff Neubauer</span> is a Fitness+ Engineer at Apple, building apps that help people stay active, track their progress, and reach their fitness goals. He’s worked across iOS and macOS, from creating smart home apps at Door (formerly Latch) to contributing to SwiftUI, the framework that makes Apple apps easier to build. Duff is passionate about using technology to make health and wellness more engaging, fun, and accessible for everyone.
+				</p>
+				<ul>
+					<li>
+						<a href="mailto:d.neubauer@me.com" target="_blank">Email</a>
+					</li>
+					<li>
+						<a href="https://github.com/duffneub" target="_blank">GitHub</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/duffneubauer" target="_blank">LinkedIn</a>
+					</li>
+					<li>
+						<a href="/duff-neubauer-resume.pdf" target="_blank">Resume</a>
+					</li>
+				</ul>
+			</figcaption>
+		</figure>
+
+	</section>
 </BaseLayout>
 
 <style>
 	section {
 		align-items: center;
 		display: flex;
-		grid-column: 1 / span 12;
+		grid-column: 2 / span 10;
 		flex-direction: column;
 	}
 
@@ -21,5 +47,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		font-size: 24px;
 		font-weight: 600;
 		margin-bottom: 40px;
+	}
+
+	.headshot {
+		background-color: #F5F5F5;
+		border-radius: 16px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	img {
+		filter: grayscale();
+	}
+
+	figcaption {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	figcaption span {
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	li {
+		margin-right: 10px;
+	}
+
+	li:hover {
+		text-decoration: underline;
 	}
 </style>
